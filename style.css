@@ -253,7 +253,7 @@ a:hover::after {
   font-style: normal;
   padding-top: 1rem;
   padding-bottom: 0rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   opacity: 0;
   background-image: repeating-linear-gradient(45deg, #b2d5de 0 2px, transparent 2px 4px);
   background-repeat: no-repeat;
@@ -1049,7 +1049,7 @@ iframe{
   }
 .title{
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
   font-size: 50px;
 }
 #subtitle{
@@ -1578,8 +1578,6 @@ footer{
 
 
 
-
-
 /*index responsibdezain*/
 @media screen and (max-width: 480px){
   
@@ -1590,10 +1588,11 @@ body{
 img {width: 100% ;}
 .yokohaba{width: 88%;}
 .topdiv{width:100%;}
-.title{font-size: 40px;}
+.title{font-size: 40px;
+      margin-bottom: 20px;}
 #subtitle{
   margin-top: 0;
-  font-size: 36px;
+  font-size: 32px;
 }
 
 .slideMenu{
