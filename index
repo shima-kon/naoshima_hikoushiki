@@ -38,15 +38,15 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
 
-    <!-- Googleタグ 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DRY7C75LN"></script>
-    <script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3SVKTQQBNS"></script>
+        <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-7DRY7C75LN');
+
+        gtag('config', 'G-3SVKTQQBNS');
     </script>
-    -->
 </head>
 
     
