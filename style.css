@@ -728,6 +728,140 @@ width: 100%;
   display: none;
 }
 
+/*kiski*/
+
+.kiseki{
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.kisekidiv{
+  display: flex;
+  justify-content: space-between;
+  gap: 4%;
+}
+.kisekidiv div p{
+  color: #333;
+}
+.timeline-item:last-child {
+  border-bottom: none;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 20px;
+  padding: 50px auto;
+  opacity: 0;
+}
+
+.timeline-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 20px;
+  background-color: #e3f4ff;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 95%;
+  margin: 28px 0 0 auto;
+}
+
+.timeline-item:hover {
+  background-color: #f2faff;
+}
+
+
+.timeline-item h3 {
+  margin: 0;
+  font-size: 1.6em;
+  color: #509BEA;
+  font-family:"M PLUS Rounded 1c", "IBM Plex Sans JP", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+.timeline-item p {
+  font-size: 1.1em;
+  font-family: "IBM Plex Sans JP","M PLUS Rounded 1c", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  margin-top: 8px;
+}
+.markerdiv{
+  left: -5%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+}
+.timeline-marker {
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  background-color: #509BEA;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+.tatesen-marker{
+  top: 20px;
+  width: 3px;
+  height: 300px;
+  background-color: #509BEA;
+}
+
+.saigotatesen-marker{
+  top: 20px;
+  width: 3px;
+  height: 180px;
+  background-color: #509BEA;
+}
+
+
+.details {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #e3f4ff;
+  border-left: 4px solid #509BEA;
+  font-size: 0.9em;
+  color: #444;
+  display: none;
+  border-radius: 6px;
+  transition: opacity 0.3s ease;
+
+}
+.tensyasin{
+  width: 326px;
+  height: auto;
+  border-radius: 2%;
+}
+.samune{
+  width: 300px;
+  height: auto;
+  border-radius: 2%;
+}
+.twitter-tweet{
+  width: 326px;
+  height: auto;
+}
+
+.details p {
+  font-size: 16px;
+  font-family: "IBM Plex Sans JP","M PLUS Rounded 1c", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 6px 0;
+  color: #333;
+}
+
+.timeline-item:active .details {
+  opacity: 1;
+}
+
+
 
 /*access*/
 .accesstable {
@@ -1380,6 +1514,66 @@ margin: 0 auto;
   border-radius: 2%;
 }
 
+
+  /*kiseki*/
+  .kiseki{
+    background-image: url(../kanatakanataimg/haikeikana.png);
+    background-repeat: repeat;
+    background-size: auto;
+    padding-top: 100px;
+    padding-bottom: 80px;
+   
+    
+  }
+
+.kisekidiv{
+  display: block;
+  gap: 0%;
+}
+.dougakiseki{
+  width: 100%;
+height: auto;
+aspect-ratio: 16 / 9;
+}
+.markerdiv{
+  left: -9%;
+
+}
+.timeline-marker {
+  width: 20px;
+  height: 20px;
+}
+.tatesen-marker{
+  top: 20px;
+  width: 3px;
+  height: 900px;
+
+}
+.saigotatesen-marker{
+  height: 350px;
+
+}
+.timeline {
+  margin-left: 0;
+
+}
+
+.timeline-item h3 {
+  font-weight: 600;
+  font-size: 20px;
+  
+}
+
+.timeline-item p {
+  margin-top: 8px;
+  margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0;
+    transform:rotateZ(0.03deg);
+
+}
+
 /*rink*/
 .rink{
 
@@ -1880,6 +2074,56 @@ td{
   border-radius: 2%;
 }
 
+
+  /*kiseki*/
+  .kiseki{
+    background-image: url(../kanataimg/haikeikana.png);
+    background-repeat: repeat;
+    background-size: auto;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+.kisekidiv{
+  display: block;
+  gap: 0%;
+}
+.markerdiv{
+  left: -9%;
+
+}
+.timeline-marker {
+  width: 18px;
+  height: 18px;
+
+}
+.tatesen-marker{
+  top: 20px;
+  width: 3px;
+  height: 600px;
+
+}
+.timeline {
+  margin-left: 0;
+
+}
+
+.timeline-item h3 {
+  font-weight: 600;
+  font-size: 20px;
+  
+}
+
+.timeline-item p {
+  margin-top: 6px;
+  margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0;
+    transform:rotateZ(0.03deg);
+
+}
+
 /*rink*/
 .rink{
   padding-top: 0;
@@ -1900,13 +2144,14 @@ td{
 }
 
 .btn-slide-horizontal{
-  margin-top: 4px;
+  margin-top: 2px;
 }
 .snsdiv {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
+
 
 
 /*更新履歴*/
