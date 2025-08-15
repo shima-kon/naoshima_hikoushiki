@@ -439,3 +439,31 @@ kousinrirekiElements.forEach(kousinrirekiElement => {
   kousinrirekiObserver.observe(kousinrirekiElement);
 });
 
+//kiseki
+  const timelineElements = document.querySelectorAll('.timeline');
+  timelineElements.forEach((el, i) => el.dataset.index = i);
+  const timelineObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const index = Number(entry.target.dataset.index);
+        entry.target.animate({
+          opacity: [0, 1],
+          transform: ['translateY(50px)', 'translateY(0)']
+        }, {
+          duration: 800,
+          delay: index * 200,
+          fill: 'forwards'
+        });
+        setTimeout(() => observer.unobserve(entry.target), 1000);
+      }
+    });
+  }, { threshold: 0 });
+  timelineElements.forEach(el => timelineObserver.observe(el));
+window.showDetails = function(itemId) {
+  const details = document.getElementById(itemId);
+  const isVisible = details.style.display === "block";
+  document.querySelectorAll(".details").forEach(d => d.style.display = "none");
+  if (!isVisible) {
+    details.style.display = "block";
+  }
+};
